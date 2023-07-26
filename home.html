@@ -10,6 +10,12 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        div.test{
+            border: 2px solid white;
+            height: 604px;
         }
 
         body,
@@ -27,13 +33,13 @@
 
         }
 
-
-
         div.bg {
             background-image: url(BackgroundImage.png);
             background-size: contain;
             background-repeat: no-repeat;
-            height: 1096px;
+            height: 1060px;
+            margin: 0px;
+            padding: 0px;
         }
 
         div.image1 p {
@@ -110,18 +116,79 @@
 
         img.g {
             display: inline-block;
-
             object-fit: cover;
             width: 100%;
             height: 100%;
+        }
 
+        a.boton {
+            margin-top: 10px;
+            text-decoration: none;
+            border: 2px solid #c7b29b;
+            border-radius: 5px;
+            font-family: Gotham;
+            font-weight: 500;
+            padding: 10px;
+        }
 
+        a.boton:hover {
+            background-color: rgba(0, 0, 0, 0.107);
+        }
+
+        /*Presentation*/
+        div.presentation {
+            background-color: #010c15;
+            height: 604px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h2.title {
+            font-family: Charlemagne Std;
+            font-size: 38px;
+            color: #c7b29b;
+        }
+
+        span {
+            font-family: Gotham;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        div.tx p {
+            font-family: Gotham;
+            margin-top: 20px;
+
+            font-weight: lighter;
+            color: #ffffff;
+            font-size: 22px;
+        }
+        /*NEWS*/
+       div.news{
+        background-image: url(news.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 805px;
+       }
+       span.act{
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 37px;
+        font-weight:bold;
+        font-family: Charlemagne Std;
+        color:#f3e2ba;
+        margin-top: 20px!important;
+        }
+        /*ft*/
+        div.ft{
+            ba
         }
     </style>
 </head>
 
 <body>
-    <div class="bg">
+    <div class="bg p-0">
         <div class="b  d-flex">
             <div class="p-1">
                 <nav class="navbar ms-4 navbar-expand-lg  bg-transparent">
@@ -149,7 +216,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="ms-auto me-4    mt-4">
+            <div class="ms-auto me-4 mt-4">
                 <div class="ms-3"><a class="lang" href="">FR</a>
                     <div class="vr ms-2 border border-1"></div>
                     <a class="ms-2 mb-5" href="https//:www.facebookcom">
@@ -183,25 +250,63 @@
         <div class="text-center">
             <h1>ATLANTIS</h1>
             <h2>THE FOURTH SUN</h2>
-            <div class="container-fluid p-4">
-                <div class="row p-0">
-                    <div class="col-4 m-1 p-0 image1 position-relative">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-3 me-3 p-0 image1 position-relative">
                         <img class="g" src="image1.png" alt="">
                         <p>Voyagez dans un univers mystique créé pour vous plonger en réalité virtuelle</p>
                     </div>
-                    <div class="col-4 m-1 p-0 image1 position-relative">
+                    <div class="col-3 me-3 p-0 image1 position-relative">
                         <img class="g" src="image2.png" alt="">
                         <p>Faites votre enquête, et découvrez la vérité derrière le funeste destin de l’atlantide</p>
                     </div>
-                    <div class="col-4 m-1 p-0 image1 position-relative">
+                    <div class="col-3 me-3 p-0 image1 position-relative">
                         <img class="g" src="image3.png" alt="">
                         <p>Mettez votre habilité et votre intellect à l’épreuve face à des défis venus d’un autre temps.
                         </p>
+                    </div>
+                    <div class="col-12 pt-5"><a href="#" class="boton">ACHETER MAINTENANT</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="presentation p-0 m-0">
+        <div class="container-fluid ">
+            <div class="row justify-content-center">
+                <div class="col-6 tx">
+                    <h2 class="title">présentation</h2>
+                    <span>Un jeu d’aventiure et d’énigmes épisodique en réalité virtuelle</span>
+                    <p>Se déroulant en 3 épisodes, le jeu Atlantis - the fourth sun amènera le joueur à découvrir le
+                        passé de l’ancienne cité. Suite à un malencontreux incidents, il se verra impliqué dans une
+                        aventure semée d’intrigues, de personnages attachants et repoussants, d’artefacts anciens, et de
+                        pouvoirs le dépassant.
+                    </p>
+                    <p>Ce n’est qu’en exploitant ses pleines capacité physique et mental qu’il pourra, peut être, sauver
+                        l’Atlantide de son funeste destin.</p>
+                    <div class="pt-5"><a href="#" class="boton">DOSSIER DE PRESS</a></div>
+
+                </div>
+                <div class="col-6 position-relative">
+                    <div class="">
+                        <img src="video.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="news container-fluid text-center">
+        <span class="act">actualités</span>
+
+    </div>
+    <footer>
+        <div class="container-fluid">
+            <div class="row ft">
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/bootstrap.bundle.js"></script>
 </body>
