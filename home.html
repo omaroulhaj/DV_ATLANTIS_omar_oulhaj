@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        .image1 {
+            height: 328px;
+            padding: 0px;
+            margin: 0px;
+            -webkit-box-shadow: inset -4px -46px 46px -2px rgba(0, 0, 0, 0.57);
+            box-shadow: inset -4px -46px 46px -2px rgba(0, 0, 0, 0.57);
+
+        }
+
+
+
+        div.bg {
+            background-image: url(BackgroundImage.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 1096px;
+        }
+
+        div.image1 p {
+            font-family: Gotham;
+            position: absolute;
+            bottom: 10px;
+            font-weight: lighter;
+            font-size: 17px;
+            color: #c7b29b;
+        }
+
+        div.image2 p {
+            font-family: Gotham;
+            position: absolute;
+            bottom: 20px;
+            font-weight: lighter;
+            font-size: 17px;
+            color: #c7b29b;
+        }
+
+        div.image3 p {
+            font-family: Gotham;
+            position: absolute;
+            bottom: 20px;
+            font-weight: lighter;
+            font-size: 17px;
+            color: #c7b29b;
+        }
+
+        a {
+            color: #c7b29b !important;
+            font-family: Charlemagne Std;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        a.lang {
+            color: #c7b29b !important;
+            font-family: Raleway;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        hr.color {
+            border-color: #c7b29b !important;
+        }
+
+        div.b {
+            border-color: #c7b29b !important;
+            border-bottom: 2px solid #c7b29b !important;
+            width: 100%;
+            height: 75px;
+        }
+
+        h1,
+        h2 {
+            font-family: Archeologicaps;
+            color: #c7b29b;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 97.73px;
+            margin-top: 84px;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 37.79px;
+            margin-top: 45px;
+        }
+
+        img.g {
+            display: inline-block;
+
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="b  d-flex">
+            <div class="p-1">
+                <nav class="navbar ms-4 navbar-expand-lg  bg-transparent">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">ACCEUIL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">GALLERIE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">A PROPOS</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="ms-auto me-4    mt-4">
+                <div class="ms-3"><a class="lang" href="">FR</a>
+                    <div class="vr ms-2 border border-1"></div>
+                    <a class="ms-2 mb-5" href="https//:www.facebookcom">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
+                            height="25" viewBox="0 0 25 25">
+                            <image id="facebook" data-name="Objet dynamique vectoriel" width="25" height="25"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAACG0lEQVRIicWWv0tbURTHP16JEEjwB2SruFQyulQQClrqpENbAhmSP0EcxCVToS5iF3Vr/wIdhICLtgULLQ0EnDqWgKhrl0qEgKm0HPi+8JC8e8UX8AsZ3ss5n/Puved9zxtqX37BozxQApaAWWAKGAZugQvgFDgG6kA7CZNUJAvUgDVgFLgGmkALuAFGgGlgDsgBV8Au8B7o3KfIDHAgyHdgGzgCun0eJgMsA+vAvB6iDPyMB7k7SS+BBlAAqsACcJhQAN0/VFxVeQ1x+q5kRgF/gEXgVwLYpyJwAowBz6MVRSvJaou6KQqgvEVxDsTtFanpDFZSFIgXWhGvFhXJq4vskPcDAGvnS+Cffi8S4vbFM27eKXFUXRTSR2BSBaxt/3rit8UtOb1o12pTn/LqHtNbHe4PT/yRuEtOb3LT06amJ8Bq7PqZtmLSk9MVd9bJKlqBVTwFNmPXb4AdYCKQZ9wpJy+6CQSfyzIifQY2gLNAnnGHncxu5B5FtmLXn4B3PlOUjHvr5KbTgeCHyrgXTnY9J7MbpDLinjrNg5zcdJBaFvfYaeBcya4HqXVx606Ht6t5UPEUsYRx/T4EHqYinnHbkdVnZcsF7WMakyzqJfyt8dGJXLijiZbRPCimKHAiTjkaxfHJaCt5JU9qBraunyrKGxOnN4Lvjt+vmmi21D3gG/Da09523/63OIu3PMs3Tk+P9rUSV/rvLuA/urWVmyYYItQAAAAASUVORK5CYII=" />
+                        </svg>
+                    </a>
+                    <a class="ms-2 mb-5" href="https//facebookcom">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
+                            height="25" viewBox="0 0 25 25">
+                            <image id="Objet_dynamique_vectoriel" data-name="Objet dynamique vectoriel" width="25"
+                                height="25"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAACPElEQVRIicXWP0iVYRQG8J+fXsGybHFoCCdxCVwShCAjh9CiQHDQqWgInMJFaKnGllAI2hpzEAQjFAKD/hgXXIogCCdrdKk0RE2MN86Vy+V+4u0KHfh4ue8953nec77zPudrWP/60gF2AkMYQA860IhdrGIZC5jFeh5MHkkLJnAHbdhAESvYRjM60YtW/MAkHmLzMCTdmAmQN3iEeexUOUwBgxjHhTjEMD6WO2UVQZewhHaMog9zOQRify78RiNuKXCqZtIdDt/Rjy85wAdZFxZxCudLGZUyaYkS7dRBIOL6A2cmcPdJJuIdjFUQXMRdnK6RaCzwEu7fcqU2/Rap9ZU5N+BXnOYpbtWY1et4BWeyuAdt0UXltoe3+I33NRIIvIQ71BQXbSPatNIuoymIarX5wB3I4iYXc9p0L/Zv4Bw+xHMbn+ISvojWrbSdwO3JQipWDnHK1qhxep7gLE7iCh7nxCTcjiy0aLvGUkxGvUslvprjl3AbsxC75hpJpvETz+P3MRyv4pdwd7NQ084aSUrvb6tsr1DFL+GuZiHXvTlO9VghcJezmAetoaZHaYOBu9AUA2cq5HquguRmrO9inYp1LdbPZXtbFbHj0eKzJRW+j3sh19NHkM0InuFBwi6RtIR2tUcd/1WFhdwXI9t0pzZLKrwZE60Q86CrDoLFwBkujeLyyZgyuRYDpxgp12IjEXcqcPZHcOX4fRUTbS1qmuT6+gHtnfbT/8kv+ae4FJ9w9u2/fa2UW/3fXfgDDSmhxnpTvSUAAAAASUVORK5CYII=" />
+                        </svg>
+
+                    </a>
+                    <a class="ms-2 mb-5" href="https/facebookcom">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
+                            height="25" viewBox="0 0 25 25">
+                            <image id="Objet_dynamique_vectoriel" data-name="Objet dynamique vectoriel" width="25"
+                                height="25"
+                                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAACVUlEQVRIicWWvWtUQRTFfztxAwuRxCJgI2IRFkVImmBAMGqqpFBZSLFpLYRUIkJaxcom+CdYiAjBSJoExQS/AgspRBBBhUiUVFooG1zIEpUr5y3j8Gay8AoPLCwz954zd+Z+vFLz8xMSOAjUgElgFDgK9AB7wBawAawAi0AzRhMTqQBzwFWgH9gBGsBHYBfoBYaAMaAP+AHcAW4DrW5EhoEFkbwA5oFloJ1zmDIwBVwDzugQ08Ab38gFTueBdWAQmAHGgaWIAFpfkt2M/NbFkxvJsAy+AxPA+whxClVgFRgATmcRZZFUdEXtAgLIb0I8C+LtiMzpDWYLCPhCs+Iz3r/XZWn6RaGNd0lkPiPAJrDtpbWP53qCI0510K8sCnEFOB6sHQM+KPM+AY+A6zm+8+KtORXajtI0xCklQ81btys4rP+WwpdUpCGWxTvpVMmNSJo+BQ4BD4HXwE0VoI9dFW2ItnhHD+gUjyN3fwL4pQQZ0S/EpoTyYMV5zunRYkYxcR+vEnvG2+OUFb0Ro5fA3X1E7iX2jHfPqZsOJQwX9YB5eKBUjcF4t5za9ZgyJQ9rwC3gd7Bnj3o5IVAW74bTPOhTN/VRUuVuq4WXtPcNuAGcBX4mRKbEu9JNxduJTqqwTOCdMm4//FPxTQ0cmwf1HMe2auQZ8LZLgbr4jLeZtfqKIhnUPRZpklW911dF0sq6cEsTrax5UC0gsCqe6WwU+5PRIrmggdOIXF0KdfkNiKczgsPxu6aJZqHe1+NdTKS3rdu+2Zm9+Zm/8XTw375WfBT/7gL+AFuPq/3DrEJIAAAAAElFTkSuQmCC" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <h1>ATLANTIS</h1>
+            <h2>THE FOURTH SUN</h2>
+            <div class="container-fluid p-4">
+                <div class="row p-0">
+                    <div class="col-4 m-1 p-0 image1 position-relative">
+                        <img class="g" src="image1.png" alt="">
+                        <p>Voyagez dans un univers mystique créé pour vous plonger en réalité virtuelle</p>
+                    </div>
+                    <div class="col-4 m-1 p-0 image1 position-relative">
+                        <img class="g" src="image2.png" alt="">
+                        <p>Faites votre enquête, et découvrez la vérité derrière le funeste destin de l’atlantide</p>
+                    </div>
+                    <div class="col-4 m-1 p-0 image1 position-relative">
+                        <img class="g" src="image3.png" alt="">
+                        <p>Mettez votre habilité et votre intellect à l’épreuve face à des défis venus d’un autre temps.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
